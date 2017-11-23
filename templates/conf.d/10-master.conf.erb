@@ -34,8 +34,8 @@ service imap-login {
     #port = 143
 <% if @imaplogin_imap_port and @imaplogin_imap_port >= 0 -%>
     port = <%= @imaplogin_imap_port %>
-  }
 <% end -%>
+  }
   inet_listener imaps {
     #port = 993
 <% if @imaplogin_imaps_port and @imaplogin_imaps_port >= 0 -%>
